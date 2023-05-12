@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">  
+   <head>  
+     {{>headerlink}}
+     
+   </head>  
+     {{>header}}
+   <body class="regbody">  
+<div class="container register-form">  
+            <form class="form" action="register" method="POST">  
+                <div class="note">  
+                    <h1> Student Registration </h1>  
+                </div>  
+                <div class="form-content">  
+                    <div class="row">  
+                        <div class="col-md-6">  
+                            <div class="form-group">  
+                              <label class="px-3 d-5">Full Name :</label>
+                                <input type="text" class="form-control" placeholder="Your Name *" value="" name="fullname"/>  
+                            </div>  
+                            <div class="form-group"> 
+                              <label class="px-3 d-5">Phone :</label> 
+                                <input type="text" class="form-control" placeholder="Phone Number *" value="" name="phone"/>  
+                            </div>  
+                        </div>              
+                        <div class="col-md-6">  
+                            <div class="form-group"> 
+                               <label class="px-3 d-5">Password :</label>  
+                                <input type="password" class="form-control" placeholder="Your Password *" value="" name="password"/>  
+                            </div>  
+                            <div class="form-group"> 
+                               <label class="px-3 d-5">Confirm Password:</label>  
+                                <input type="Password" class="form-control" placeholder="Confirm Password *" value="" name="confirmpassword"/>  
+                            </div>  
+                        </div>  
+                     </div> 
+    <div class="row align-items-center mt-1">  
+            <div class="col">  
+               <label class="px-3 d-5 my">Email :</label> 
+              <input type="text" class="form-control" placeholder=" Enter Email Address" name="email">  
+            </div>  
+          </div> 
+          <div class="row align-items-center mt-4">  
+            <div class="col">  
+               <label class="px-3 d-5">Address :</label> 
+              <input type="address" class="form-control" placeholder=" Address" name="address">  
+            </div>  
+              
+          </div> 
+            <div class="row align-items-center mt-4"> 
+          <div class="col">  
+               <label class="mx-3">Gender :</label> 
+              <input type="radio" class="mx-3" name="male" value="male">Male  
+              <input type="radio" class="mx-3" name="male" value="female">Female  
+            </div>
+             </div> 
+
+    <div class="row justify-content-start mt-1">  
+            <div class="col">  
+              <div class="form-check">  
+                <label class="form-check-label">  
+                  <input type="checkbox" class="form-check-input">  
+                  I hereby agree to the <a href="/"> Terms and Conditions. </a>  
+                </label>  
+              </div>  
+                    <button type="submit" class="btnSubmit mt-3" value="register"> Submit </button>
+                    <a href="/login" ><p class="my-3" style="position: relative; float:right"> Have a  Account?</p></a>    
+                </div>  
+            </div>    
+        </div>  
+        </form>  
+        </div>  
+</body>  
+</html>  
